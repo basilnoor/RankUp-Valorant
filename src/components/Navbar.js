@@ -18,7 +18,7 @@ function Navbar() {
         <Box className="navHead" boxShadow="dark-lg" >
             <Box w="3rem" >
                 <Link href="https://www.reddit.com/r/VALORANT/" isExternal>
-                    <Image src={RedditLogo} />
+                    <Image borderRadius="full" shadow="lg" src={RedditLogo} />
                 </Link>
             </Box>
             <nav ref={navRef}>
@@ -26,7 +26,7 @@ function Navbar() {
                 <a href="/agents">Agents</a>
                 <a href="/weapons">Weapons</a>
                 <a href="/maps">Maps</a>
-                <a href="/top-picks">TopPicks</a>
+                <a href="/top-picks">Top Picks</a>
                 <a href="/resources">Resources</a>
                 <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                     <FaTimes />

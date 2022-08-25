@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import { Flex } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 
 import Navbar from './components/Navbar'
 import ValTitle from './components/ValTitle';
@@ -23,7 +23,7 @@ function App() {
       <Router>
         <ValTitle />
         <Navbar />
-        <Flex className="App-header">
+        <Box className="App-header">
           <Route path="/" exact>
             <HomePage />
           </Route>
@@ -42,7 +42,7 @@ function App() {
           <Route path="/resources">
             <Resources />
           </Route>
-        </Flex>
+        </Box>
         <Footer />
       </Router>
     </div>

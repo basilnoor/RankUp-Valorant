@@ -5,7 +5,6 @@ import { Table, Thead, Tbody, Tfoot, Tr, Th, Td, TableCaption, TableContainer, }
 
 function Agent({ agent }) {
     return (
-
         <AccordionItem paddingBottom="5%">
             <h2>
                 <AccordionButton _expanded={{ bg: 'teal', color: 'white' }}>
