@@ -1,10 +1,11 @@
 import React from 'react';
 import axios from "axios";
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import MapCard from '../components/MapCard';
+import '../App.css'
+import MapBanner from '../images/maps2.jpg'
 
-import { Box, Heading, SimpleGrid } from '@chakra-ui/react'
+import { Box, Heading, SimpleGrid, Image, Flex } from '@chakra-ui/react'
 
 
 export const Maps = () => {
@@ -36,12 +37,14 @@ export const Maps = () => {
 
     return (
         <>
-            <Box h="75vh" w="full" bg="grey"></Box>
-            <Box w="full" px="200px" py="60px">
-                <Heading textAlign="center" pb="60px">
+            <Flex h="50vh" w="full" bg="#BD3944" align="center" justifyContent="center" shadow="dark-lg" >
+                <Image h="50vh" w="100vh" opacity="90%" src={MapBanner}></Image>
+            </Flex>
+            <Box p={8} marginLeft="5" marginRight="5" align="center" maxW="125vh">
+                <Heading color="#FD4556" fontFamily='VALORANT' textAlign="center" py="70px" pb="60px" pointerEvents="none" size="lg">
                     Maps
                 </Heading>
-                <SimpleGrid columns={[2, null, 3]} spacing='50px'>
+                <SimpleGrid columns={[1, null, 2]} spacing='50px' >
                     {maps.map((map, index) => <MapCard map={map} key={index} />)}
                 </SimpleGrid>
             </Box>

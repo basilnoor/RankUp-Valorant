@@ -86,18 +86,17 @@ function HomePage() {
 
     return (
         <>
-            <Flex w="100%" h="75vh" align="center" pointerEvents="none" bg="#eee" >
+            <Flex w="full" h="75vh" align="center" pointerEvents="none" bg="#eee" pb="80px">
                 <iframe src="https://giphy.com/embed/QdPy2EL9wr0GpMHD39" width="100%" height="100%" frameBorder="none"></iframe>
             </Flex>
             <Link href="https://twitter.com/PlayVALORANT/" isExternal>
-                <HStack spacing={8} marginTop="3%">
-                    <Box p={8} shadow='dark-lg' borderWidth='1px' bg="white" marginLeft="5" marginRight="5" align="center" maxW="100vh">
-                        <Feature
-                            desc={mockTwitter[0]["text"]}
-                        />
-                        <Image src={media_url_valid()} />
-                    </Box>
-                </HStack>
+                <Box p={8} shadow='dark-lg' borderWidth='1px' bg="white" marginLeft="5" marginRight="5" align="center" maxW="100vh">
+                    <Feature
+                        desc={mockTwitter[0]["text"]}
+                    />
+                    <Image src={media_url_valid()} />
+                </Box>
+
             </Link>
         </>
     );

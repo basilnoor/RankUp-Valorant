@@ -2,6 +2,8 @@ import React, { useRef } from 'react';
 import { Box, Image, Heading, Text, Link, ScaleFade } from '@chakra-ui/react';
 import { useInViewport } from 'react-in-viewport';
 
+import '../styles/Navbar.css'
+
 
 function Map({ map }) {
 
@@ -11,8 +13,8 @@ function Map({ map }) {
     const { inViewport } = useInViewport(ref, { rootMargin: "-300px" }, { disconnectOnLeave: false }, {})
 
     return (
-        <ScaleFade initialScale={0.9} in={inViewport} whileHover={{ scale: 1.1 }}>
-            <Box w="full" borderRadius="lg" shadow="lg" borderWidth="2px" cursor="pointer" overflow="hidden" ref={ref}>
+        <ScaleFade className='mapCard' initialScale={0.8} in={inViewport} whileHover={{ scale: 1.1 }}>
+            <Box borderRadius="lg" shadow="lg" borderWidth="2px" cursor="pointer" overflow="hidden" ref={ref}>
                 <Link href={blitzMap} isExternal>
                     <Image src={map.splash} />
                     <Box p={6}>

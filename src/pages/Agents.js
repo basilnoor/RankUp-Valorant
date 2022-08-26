@@ -3,8 +3,9 @@ import axios from "axios";
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import AgentList from '../components/AgentList';
+import AgentBanner from '../images/agents1.jpg'
 
-import { Button, Heading, Flex, Box } from '@chakra-ui/react'
+import { Button, Heading, Flex, Box, Image, filter } from '@chakra-ui/react'
 
 export const Agents = () => {
 
@@ -14,40 +15,36 @@ export const Agents = () => {
     // Variable stores API key needed to make GET request
     const getAgents = {
         method: 'GET',
-        url: 'https://sports-data3.p.rapidapi.com/ufc',
+        url: 'https://valorant-api.com/v1/agents/',
     };
 
-    // REMOVE WHEN API LIMIT BACK
-    // // useEffect function gets the response from event_data() automatically upon loading HomePage
-    // useEffect(() => {
-    //     // Uses nextEvent to make a GET request to API and store the data 
-    //     const eventData = async () => {
-    //         await axios.request(eventApi).then(function (response) {
-    //             setEvent(response.data)
-    //         }).catch(function (error) {
-    //             console.error(error);
-    //         });
-    //     };
-    //     eventData();
-    //     // eslint-disable-next-line react-hooks/exhaustive-deps
-    // }, []);
+    // useEffect function gets the response from eventData() automatically upon loading page
+    useEffect(() => {
+        // Uses nextEvent to make a GET request to API and store the data 
+        const eventData = async () => {
+            await axios.request(getAgents).then(function (response) {
+                setAgents(response.data.data)
+            }).catch(function (error) {
+                console.error(error);
+            });
+        };
+        eventData();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
-
-    const agentsPlaceholder = [
-        { description: "Miranda Maverick vs Shanna Young", fighter1: "Miranda Maverick", moneyLine1: "-550", fighter2: "Shanna Young", moneyLine2: "+400", props: "forget this" },
-        { description: "Alexander Romanov vs Marcin Tybura", fighter1: "Alexander Romanov", moneyLine1: "-55", fighter2: "Marcin Tybura", moneyLine2: "+4000", props: "forget this" },
-        { description: "Jose Aldo vs Merab Dvalishvili", fighter1: "Jose Aldo", moneyLine1: "-50", fighter2: "Merab Dvalishvili", moneyLine2: "+40", props: "forget this" },
-        { description: "Paulo Henrique Costa vs Luke Rockhold", fighter1: "Paulo Henrique Costa", moneyLine1: "-335", fighter2: "Luke Rockhold", moneyLine2: "+255", props: "forget this" },
-        { description: "Kamaru Usman vs Leon Edwards", fighter1: "Kamaru Usman", moneyLine1: "-400", fighter2: "Leon Edwards", moneyLine2: "+300", props: "forget this" },
-    ]
+    console.log(agents)
 
     return (
         <>
-            <Heading size="md">{"eventTitle HERE"}</Heading>
-            <Box >
-                <AgentList agents={agentsPlaceholder} />
+            <Flex h="50vh" w="full" bg="#BD3944" align="center" justifyContent="center" shadow="dark-lg">
+                <Image h="50vh" w="100vh" opacity="90%" src={AgentBanner}></Image>
+            </Flex>
+            <Box p={8} marginLeft="5" marginRight="5" align="center" maxW="100vh">
+                <Heading color="#FD4556" fontFamily='VALORANT' textAlign="center" py="70px" pb="60px" pointerEvents="none" size="lg">
+                    Agents
+                </Heading>
+                <AgentList agents={agents} />
             </Box>
-
         </>
     );
 }

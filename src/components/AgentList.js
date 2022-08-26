@@ -7,11 +7,9 @@ import { Table, Thead, Tbody, Tfoot, Tr, Th, Td, TableCaption, TableContainer, }
 
 function AgentList({ agents }) {
     return (
-        <Box align="center" minW="450">
-            <Accordion defaultIndex={[0]} minW="450" maxW="75%" allowMultiple allowToggle>
-                {[...agents].reverse().map((agent, index) => <Agent agent={agent} key={index} />)}
-            </Accordion>
-        </Box>
+        <Accordion defaultIndex={[0]} allowMultiple allowToggle>
+            {agents.map((agent, index) => <Agent agent={agent} key={index} />)}
+        </Accordion>
     )
 }
 
