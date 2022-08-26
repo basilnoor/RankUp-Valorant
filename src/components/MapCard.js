@@ -4,7 +4,6 @@ import { useInViewport } from 'react-in-viewport';
 
 import '../styles/Navbar.css'
 
-
 function Map({ map }) {
 
     const blitzMap = `https://blitz.gg/valorant/maps/${map.displayName}`

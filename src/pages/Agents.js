@@ -3,7 +3,7 @@ import axios from "axios";
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import AgentList from '../components/AgentList';
-import AgentBanner from '../images/agents1.jpg'
+import AgentBanner from '../images/agents2.png'
 
 import { Button, Heading, Flex, Box, Image, filter } from '@chakra-ui/react'
 
@@ -32,18 +32,19 @@ export const Agents = () => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    console.log(agents)
 
     return (
         <>
-            <Flex h="50vh" w="full" bg="#BD3944" align="center" justifyContent="center" shadow="dark-lg">
-                <Image h="50vh" w="100vh" opacity="90%" src={AgentBanner}></Image>
+            <Flex h="53vh" maxW="full" w="95vh" bg="#BD3944" align="top" justifyContent="center" shadow="dark-lg" >
+                <Image h="50vh" w="90vh" shadow="dark-lg" src={AgentBanner}></Image>
             </Flex>
-            <Box p={8} marginLeft="5" marginRight="5" align="center" maxW="100vh">
+            <Box marginLeft="5" marginRight="5" align="center" maxW="100vh" >
                 <Heading color="#FD4556" fontFamily='VALORANT' textAlign="center" py="70px" pb="60px" pointerEvents="none" size="lg">
                     Agents
                 </Heading>
-                <AgentList agents={agents} />
+                <Box maxW="100%">
+                    <AgentList agents={agents} />
+                </Box>
             </Box>
         </>
     );

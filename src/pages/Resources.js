@@ -3,7 +3,7 @@ import axios from "axios";
 import { useState, useEffect } from 'react';
 
 import '../App.css'
-import ResourcesBanner from '../images/Resources.png'
+import ResourcesBanner from '../images/resource2.jpg'
 
 import { Box, Heading, Text, Image, Flex, Link, color } from '@chakra-ui/react'
 
@@ -12,10 +12,10 @@ export const Resources = () => {
 
     return (
         <>
-            <Flex h="50vh" w="full" bg="#BD3944" align="center" justifyContent="center" shadow="dark-lg">
-                <Image h="50vh" w="100vh" opacity="90%" src={ResourcesBanner}></Image>
+            <Flex h="53vh" maxW="full" w="95vh" bg="#BD3944" align="top" justifyContent="center" shadow="dark-lg" >
+                <Image h="50vh" w="90vh" shadow="dark-lg" src={ResourcesBanner}></Image>
             </Flex>
-            <Box className='Res-Container' p={8} marginLeft="5" marginRight="5" align="center" maxW="100vh" shadow="lg">
+            <Box className='Res-Container' p={8} marginLeft="5" marginRight="5" align="center" maxW="100vh" w="90vh" shadow="lg">
                 <Heading color="#FD4556" fontFamily='VALORANT' textAlign="center" py="70px" pb="60px" pointerEvents="none" size="lg">
                     Resources
                 </Heading>

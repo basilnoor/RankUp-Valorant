@@ -37,8 +37,8 @@ export const Maps = () => {
 
     return (
         <>
-            <Flex h="50vh" w="full" bg="#BD3944" align="center" justifyContent="center" shadow="dark-lg" >
-                <Image h="50vh" w="100vh" opacity="90%" src={MapBanner}></Image>
+            <Flex h="53vh" maxW="full" w="95vh" bg="#BD3944" align="top" justifyContent="center" shadow="dark-lg" >
+                <Image h="50vh" w="90vh" shadow="dark-lg" src={MapBanner}></Image>
             </Flex>
             <Box p={8} marginLeft="5" marginRight="5" align="center" maxW="125vh">
                 <Heading color="#FD4556" fontFamily='VALORANT' textAlign="center" py="70px" pb="60px" pointerEvents="none" size="lg">
