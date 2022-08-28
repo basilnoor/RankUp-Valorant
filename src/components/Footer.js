@@ -8,7 +8,7 @@ function Footer() {
             <Text color="#000" align="left">
                 Proudly created by Basil Noor &copy; 2022
             </Text>
-            <Box paddingLeft="2%">
+            <Box paddingLeft="1%">
                 <Link href="https://github.com/basilnoor" isExternal>
                     <BsGithub />
                 </Link>

@@ -55,7 +55,7 @@ function Agent({ agent }) {
                         </TabList>
                         <TabPanels>
                             <TabPanel>
-                                <Popover isLazy placement='top'>
+                                <Popover isLazy placement='top' trigger='hover'>
                                     <PopoverTrigger>
                                         <Text _hover={{ color: "black", cursor: "pointer" }} p="5px"><Image maxH="5vh" src={aOneIcon} /> {aOneName}</Text>
                                     </PopoverTrigger>
@@ -68,7 +68,7 @@ function Agent({ agent }) {
                                 </Popover>
                             </TabPanel>
                             <TabPanel>
-                                <Popover isLazy placement='top'>
+                                <Popover isLazy placement='top' trigger='hover'>
                                     <PopoverTrigger>
                                         <Text _hover={{ color: "black", cursor: "pointer" }} p="5px"><Image maxH="5vh" src={aTwoIcon} /> {aTwoName}</Text>
                                     </PopoverTrigger>
@@ -81,7 +81,7 @@ function Agent({ agent }) {
                                 </Popover>
                             </TabPanel>
                             <TabPanel>
-                                <Popover isLazy placement='top'>
+                                <Popover isLazy placement='top' trigger='hover'>
                                     <PopoverTrigger>
                                         <Text _hover={{ color: "black", cursor: "pointer" }} p="5px"><Image maxH="5vh" src={aThreeIcon} /> {aThreeName}</Text>
                                     </PopoverTrigger>
@@ -94,7 +94,7 @@ function Agent({ agent }) {
                                 </Popover>
                             </TabPanel>
                             <TabPanel>
-                                <Popover isLazy placement='top'>
+                                <Popover isLazy placement='top' trigger='hover'>
                                     <PopoverTrigger>
                                         <Text _hover={{ color: "black", cursor: "pointer" }} p="5px"><Image maxH="5vh" src={aFourIcon} /> {aFourName}</Text>
                                     </PopoverTrigger>

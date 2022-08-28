@@ -2,8 +2,9 @@ import React from 'react';
 import axios from "axios";
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import WeaponBanner from '../images/weapons.jpg'
 
-import { Button } from '@chakra-ui/react'
+import { Button, Flex, Image, Box } from '@chakra-ui/react'
 
 
 export const Weapons = () => {
@@ -33,7 +34,11 @@ export const Weapons = () => {
 
     return (
         <>
-            <h1>Weapons</h1>
+            <Flex h="53vh" maxW="full" w="95vh" bg="#BD3944" align="top" justifyContent="center" shadow="dark-lg" >
+                <Image h="50vh" w="90vh" shadow="dark-lg" src={WeaponBanner}></Image>
+            </Flex>
+            <Box p={8} marginLeft="5" marginRight="5" align="center" maxW="125vh">
+            </Box>
         </>
     );
 }

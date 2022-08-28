@@ -11,3 +11,7 @@
   align-items: center;
   flex-direction: column;
 }
+
+.boxScale :hover {
+  transform: scale(1.1);
+}
