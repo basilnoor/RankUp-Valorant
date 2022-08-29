@@ -15,11 +15,11 @@ export const Resources = () => {
             <Flex h="53vh" maxW="full" w="95vh" bg="#BD3944" align="top" justifyContent="center" shadow="dark-lg" >
                 <Image h="50vh" w="90vh" shadow="dark-lg" src={ResourcesBanner}></Image>
             </Flex>
-            <Box className='Res-Container' p={8} marginLeft="5" marginRight="5" align="center" maxW="100vh" w="90vh" shadow="lg">
-                <Heading color="#FD4556" fontFamily='VALORANT' textAlign="center" py="70px" pb="60px" pointerEvents="none" size="lg">
+            <Box className='Res-Container' p={8} marginLeft="5" marginRight="5" align="center" maxW="100vh" shadow="lg" bg="white">
+                <Heading color="#FD4556" fontFamily='VALORANT' textAlign="center" py="70px" pb="20px" pointerEvents="none" size="lg">
                     Resources
                 </Heading>
-                <Heading pb="30px" size="md" pointerEvents="none">Below are some very useful resources to help you improve!</Heading>
+                <Heading pb="80px" size="md" pointerEvents="none">Below are some very useful resources to help you improve!</Heading>
                 <Heading pb="10px" size="md" pointerEvents="none">Player Statistics / Metadata</Heading>
                 <Link href='https://tracker.gg/valorant' _hover={{ color: "#BD3944" }}>https://tracker.gg/valorant</Link>
                 <Text pb="10px" />
