@@ -1,2 +1,2 @@
 # RankUp-Valorant
-React app utilizing valorant-api
+Hosted Live: https://rankup-valorant.web.app/
