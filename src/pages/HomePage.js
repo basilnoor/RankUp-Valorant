@@ -1,14 +1,11 @@
 import React, { useRef } from 'react';
-import { TwitterTimelineEmbed } from 'react-twitter-embed';
 import axios from "axios";
+import { TwitterTimelineEmbed } from 'react-twitter-embed';
 import { useState, useEffect } from 'react';
 import { useInViewport } from 'react-in-viewport';
 
-import TCheckmark from '../images/twitter_checkmark.png'
-import ValTwitter from '../images/val_twitter.jpg'
 import '../App.css'
-
-import { ScaleFade, SimpleGrid, GridItem, Image, Flex, Box, Text, Heading } from '@chakra-ui/react'
+import { ScaleFade, SimpleGrid, GridItem, Image, Box, Text, Heading, AspectRatio } from '@chakra-ui/react'
 
 function HomePage() {
 
@@ -17,16 +14,7 @@ function HomePage() {
     const [version, setVersion] = useState([]);
     const [bundle, setBundle] = useState([]);
 
-    // Variable stores API key needed to make GET request
-    const getVal = {
-        method: 'GET',
-        url: 'https://twitter154.p.rapidapi.com/user/tweets',
-        params: { username: 'PlayVALORANT', limit: '100' },
-        headers: {
-            'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API,
-            'X-RapidAPI-Host': 'twitter154.p.rapidapi.com'
-        }
-    };
+    // Variables storing data for GET requests
     const getCompSeason = {
         method: 'GET',
         url: "https://valorant-api.com/v1/seasons/competitive",
@@ -38,32 +26,6 @@ function HomePage() {
     const getBundle = {
         method: 'GET',
         url: "https://valorant-api.com/v1/bundles",
-    };
-
-    // MOCK TWITTER API REQUEST
-    const mockTwitter = [{
-        "tweet_id": "1517995317697916928",
-        "creation_date": "Sat Apr 23 22:34:21 +0000 2022",
-        "text": "Sometimes you know an exception can be thrown, and you just want to ignore it. Take advantage of the context manager, which allows you to allocate and release resources.Use “ignore instead”. Here's a full code example:Credits to: @raymondh https://t.co/ACw677xTtN",
-        "media_url": "https://pbs.twimg.com/media/FREAsbkXIAYiaVV.jpg",
-        "user": [],
-        "language": "en",
-        "favorite_count": 17,
-        "retweet_count": 2,
-        "reply_count": 2,
-        "quote_count": 0,
-        "retweet": false,
-        "timestamp": 1650753261
-    }]
-
-    function media_url_valid() {
-        if (mockTwitter[0]["media_url"] != null) {
-            const media = mockTwitter[0]["media_url"]
-            return media
-        } else {
-            return "https://images7.alphacoders.com/108/1081933.jpg"
-        }
-
     };
 
     useEffect(() => {
@@ -104,24 +66,6 @@ function HomePage() {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    // Ui for tweet
-    function Feature({ desc }) {
-        return (
-            <Box marginBottom="2%" >
-                <Flex align="center" >
-                    <Image src={ValTwitter} w="5%" paddingRight="1%"></Image>
-                    <Heading fontSize='2xl' paddingRight="1%">VALORANT</Heading>
-                    <Image src={TCheckmark} w="5" ></Image>
-
-                </Flex>
-                <Flex align="left" p="1">
-                    <h3>@PlayVALORANT</h3>
-                </Flex>
-                <Text mt={10}>{desc}</Text>
-            </Box>
-        )
-    }
-
     // variables storing data for competitive tiers
     const ironName = "IRON"
     const ironIcon = "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/5/smallicon.png"
@@ -147,10 +91,10 @@ function HomePage() {
 
     return (
         <>
-            <Flex w="full" h="75vh" align="center" pointerEvents="none" bg="#eee" pb="80px">
-                <iframe src="https://giphy.com/embed/QdPy2EL9wr0GpMHD39" width="100%" height="100%" frameBorder="none"></iframe>
-            </Flex>
-            <Box marginLeft="5" marginRight="5" align="center" maxW="125vh" >
+            <AspectRatio w="full" ratio={16 / 9} maxH="75vh" position="absolute" pointerEvents="none">
+                <iframe title='valorant-gif' src="https://giphy.com/embed/QdPy2EL9wr0GpMHD39" w="full"></iframe>
+            </AspectRatio>
+            <Box marginLeft="5" marginRight="5" align="center" maxW="125vh" marginTop="80vh">
                 <SimpleGrid columns={[1, null, 2]} spacing='50px' paddingRight="10px">
                     <GridItem rowSpan={2} colSpan={1} marginLeft="5" marginRight="5" align="center" ref={ref}>
                         <Box align="center" >
@@ -235,7 +179,7 @@ function HomePage() {
                             <Text>{version.buildDate}</Text>
                         </Box>
                     </GridItem>
-                    <GridItem p={5} shadow='dark-lg' borderWidth='1px' bg="white" marginLeft="5" marginRight="5" align="center" h="425px" overflow="auto">
+                    <GridItem p={5} shadow='dark-lg' borderWidth='1px' bg="white" marginLeft="5" marginRight="5" align="center" h="560px" overflow="auto">
                         <TwitterTimelineEmbed sourceType="profile" screenName="PlayVALORANT" options={{ borderColor: 'red' }} />
                     </GridItem>
                     <GridItem colSpan={[1, null, 2]} p={8} marginLeft="5" marginRight="5" align="center" ref={ref}>

@@ -1,4 +1,5 @@
 import { useRef } from 'react'
+import { NavLink } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa'
 
 import '../styles/Navbar.css';
@@ -15,18 +16,18 @@ function Navbar() {
     }
 
     return (
-        <Box className="navHead" boxShadow="dark-lg" >
+        <Box className="navHead" boxShadow="dark-lg">
             <Box w="3rem" >
                 <Link href="https://www.reddit.com/r/VALORANT/" isExternal>
                     <Image borderRadius="full" shadow="lg" src={RedditLogo} />
                 </Link>
             </Box>
             <nav ref={navRef}>
-                <a href="/">Home</a>
-                <a href="/agents">Agents</a>
-                <a href="/weapons">Weapons</a>
-                <a href="/maps">Maps</a>
-                <a href="/resources">Resources</a>
+                <NavLink to='/' exact activeClassName="active">Home</NavLink>
+                <NavLink to='/agents' exact activeClassName="active">Agents</NavLink>
+                <NavLink to='/weapons' exact activeClassName="active">Weapons</NavLink>
+                <NavLink to='/maps' exact activeClassName="active">Maps</NavLink>
+                <NavLink to='/resources' exact activeClassName="active">Resources</NavLink>
                 <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                     <FaTimes />
                 </button>
