@@ -1,2 +1,2 @@
 # RankUp-Valorant
-Hosted Live: https://rankup-valorant.web.app/
+Hosted Live: https://rankup-valorant.firebaseapp.com/
