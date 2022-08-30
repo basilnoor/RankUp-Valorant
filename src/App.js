@@ -12,7 +12,6 @@ import Agents from './pages/Agents';
 import Weapons from './pages/Weapons';
 import Maps from './pages/Maps';
 import Resources from './pages/Resources';
-import TopPicks from './pages/TopPicks';
 
 
 
@@ -35,9 +34,6 @@ function App() {
           </Route>
           <Route path="/maps">
             <Maps />
-          </Route>
-          <Route path="/top-picks">
-            <TopPicks />
           </Route>
           <Route path="/resources">
             <Resources />

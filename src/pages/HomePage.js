@@ -1,19 +1,18 @@
 import React, { useRef } from 'react';
+import { TwitterTimelineEmbed } from 'react-twitter-embed';
 import axios from "axios";
 import { useState, useEffect } from 'react';
 import { useInViewport } from 'react-in-viewport';
 
 import TCheckmark from '../images/twitter_checkmark.png'
 import ValTwitter from '../images/val_twitter.jpg'
-import TwitterLogo from '../images/twitter_logo.png'
 import '../App.css'
 
-import { useDisclosure, ScaleFade, SimpleGrid, Grid, GridItem, Image, Flex, Box, Link, AspectRatio, Container, Button, Text, Heading, HStack, Spacer } from '@chakra-ui/react'
+import { ScaleFade, SimpleGrid, GridItem, Image, Flex, Box, Text, Heading } from '@chakra-ui/react'
 
 function HomePage() {
 
     // state variable storing valorant's latest tweet
-    const [valTweet, setTweet] = useState([]);
     const [compSeason, setCompSeason] = useState([]);
     const [version, setVersion] = useState([]);
     const [bundle, setBundle] = useState([]);
@@ -40,21 +39,6 @@ function HomePage() {
         method: 'GET',
         url: "https://valorant-api.com/v1/bundles",
     };
-
-    // REMOVE WHEN API LIMIT BACK
-    // // useEffect function gets the response from newsData() automatically upon loading HomePage
-    // useEffect(() => {
-    //     // Uses getVal to make a GET request to API and store the data 
-    //     const newsData = async () => {
-    //         await axios.request(getVal).then(function (response) {
-    //             setTweet(response.data)
-    //         }).catch(function (error) {
-    //             console.error(error);
-    //         });
-    //     };
-    //     newsData();
-    //     // eslint-disable-next-line react-hooks/exhaustive-deps
-    // }, []);
 
     // MOCK TWITTER API REQUEST
     const mockTwitter = [{
@@ -123,8 +107,8 @@ function HomePage() {
     // Ui for tweet
     function Feature({ desc }) {
         return (
-            <Box marginBottom="2%">
-                <Flex align="center">
+            <Box marginBottom="2%" >
+                <Flex align="center" >
                     <Image src={ValTwitter} w="5%" paddingRight="1%"></Image>
                     <Heading fontSize='2xl' paddingRight="1%">VALORANT</Heading>
                     <Image src={TCheckmark} w="5" ></Image>
@@ -251,17 +235,10 @@ function HomePage() {
                             <Text>{version.buildDate}</Text>
                         </Box>
                     </GridItem>
-                    <GridItem p={8} shadow='dark-lg' borderWidth='1px' bg="white" marginLeft="5" marginRight="5" align="center">
-                        <Link href="https://twitter.com/PlayVALORANT/" isExternal>
-                            <Feature
-                                desc={mockTwitter[0]["text"]}
-                            />
-                            <Image src={media_url_valid()} />
-                        </Link>
+                    <GridItem p={5} shadow='dark-lg' borderWidth='1px' bg="white" marginLeft="5" marginRight="5" align="center" h="425px" overflow="auto">
+                        <TwitterTimelineEmbed sourceType="profile" screenName="PlayVALORANT" options={{ borderColor: 'red' }} />
                     </GridItem>
-
                     <GridItem colSpan={[1, null, 2]} p={8} marginLeft="5" marginRight="5" align="center" ref={ref}>
-
                         <Heading fontFamily="valorant" size="lg" pb="5px" color="#FD4556" pointerEvents="none">Featured Bundle</Heading>
                         <Heading fontFamily="valorant" size="sm" pb="45px" color="#BD3944" pointerEvents="none">{bundle.displayName}</Heading>
                         <ScaleFade initialScale={0.5} in={inViewport} whileHover={{ scale: 1.1 }}>

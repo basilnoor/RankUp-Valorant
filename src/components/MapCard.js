@@ -7,6 +7,7 @@ function Map({ map }) {
 
     const blitzMap = `https://blitz.gg/valorant/maps/${map.displayName}`
 
+    // Used to animate ScaleFade when div enters view
     const ref = useRef(null);
     const { enterCount } = useInViewport(ref, { rootMargin: "-200px" }, { disconnectOnLeave: false }, {})
 

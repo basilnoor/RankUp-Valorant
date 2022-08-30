@@ -1,8 +1,9 @@
 import React from 'react';
 import axios from "axios";
 import { useState, useEffect } from 'react';
-import MapCard from '../components/MapCard';
+
 import '../App.css'
+import MapCard from '../components/MapCard';
 import MapBanner from '../images/maps2.jpg'
 
 import { Box, Heading, SimpleGrid, Image, Flex } from '@chakra-ui/react'
@@ -35,7 +36,7 @@ export const Maps = () => {
 
     return (
         <>
-            <Flex h="53vh" maxW="full" w="95vh" bg="#BD3944" align="top" justifyContent="center" shadow="dark-lg" >
+            <Flex h="53vh" maxW="full" w="95vh" bg="#BD3944" align="top" justifyContent="center" shadow="dark-lg" borderRadius="2xl">
                 <Image h="50vh" w="90vh" shadow="dark-lg" src={MapBanner}></Image>
             </Flex>
             <Box p={8} marginLeft="5" marginRight="5" align="center" maxW="125vh">

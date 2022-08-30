@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Text, Heading, Button, Flex, Image, Box } from '@chakra-ui/react'
-import { Table, Thead, Tbody, Tfoot, Tr, Th, Td, TableCaption, TableContainer, } from '@chakra-ui/react'
+import { Text, Image } from '@chakra-ui/react'
+import { Tr, Td } from '@chakra-ui/react'
 
 function Weapon({ weapon, shopData, weaponStats }) {
 
@@ -11,7 +11,6 @@ function Weapon({ weapon, shopData, weaponStats }) {
     if (weaponStats == null) {
         weaponStats = "N/A"
     }
-
 
     return (
         <Tr >

@@ -1,19 +1,8 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
-import { Flex, Image, Text, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon, Box, Divider, Heading } from '@chakra-ui/react'
-import { Table, Thead, Tbody, Tfoot, Tr, Th, Td, TableCaption, TableContainer, } from '@chakra-ui/react'
+
+import { Flex, Image, Text, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon, Box, Heading } from '@chakra-ui/react'
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
-import {
-    Popover,
-    PopoverTrigger,
-    PopoverContent,
-    PopoverHeader,
-    PopoverBody,
-    PopoverFooter,
-    PopoverArrow,
-    PopoverCloseButton,
-    PopoverAnchor,
-} from '@chakra-ui/react'
+import { Popover, PopoverTrigger, PopoverContent, PopoverHeader, PopoverBody, PopoverArrow, PopoverCloseButton, } from '@chakra-ui/react'
 
 function Agent({ agent }) {
 

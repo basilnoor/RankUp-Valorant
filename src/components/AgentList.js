@@ -1,8 +1,8 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import Agent from './Agent';
 
-import { Flex, Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon, Box, Divider, SimpleGrid, ScaleFade } from '@chakra-ui/react'
-import { Table, Thead, Tbody, Tfoot, Tr, Th, Td, TableCaption, TableContainer, } from '@chakra-ui/react'
+import { Flex, Accordion, SimpleGrid } from '@chakra-ui/react'
+
 
 
 function AgentList({ agents }) {

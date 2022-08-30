@@ -4,8 +4,6 @@ import '../styles/Navbar.css';
 import { Image, Box, Link } from '@chakra-ui/react'
 
 function ValTitle() {
-
-
     return (
         <Box className='ValHead' bg="#white" paddingBottom="3%">
             <Box display="flex" w="25%">

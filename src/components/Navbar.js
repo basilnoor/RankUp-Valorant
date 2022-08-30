@@ -1,15 +1,15 @@
 import { useRef } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import '../styles/Navbar.css';
 
-import { Image, Box, Link } from '@chakra-ui/react'
+import '../styles/Navbar.css';
 import RedditLogo from '../images/val_reddit_logo.png';
 
-
+import { Image, Box, Link } from '@chakra-ui/react'
 
 function Navbar() {
-    const navRef = useRef();
 
+    // Creating responsive NavBar (Hamburger menu)
+    const navRef = useRef();
     const showNavbar = () => {
         navRef.current.classList.toggle("responsive_nav");
     }
@@ -26,7 +26,6 @@ function Navbar() {
                 <a href="/agents">Agents</a>
                 <a href="/weapons">Weapons</a>
                 <a href="/maps">Maps</a>
-                <a href="/top-picks">Top Picks</a>
                 <a href="/resources">Resources</a>
                 <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                     <FaTimes />

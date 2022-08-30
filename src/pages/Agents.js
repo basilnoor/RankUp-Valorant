@@ -1,11 +1,11 @@
 import React from 'react';
 import axios from "axios";
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+
 import AgentList from '../components/AgentList';
 import AgentBanner from '../images/agents2.png'
 
-import { Button, Heading, Flex, Box, Image, filter } from '@chakra-ui/react'
+import { Heading, Flex, Box, Image } from '@chakra-ui/react'
 
 export const Agents = () => {
 
@@ -35,7 +35,7 @@ export const Agents = () => {
 
     return (
         <>
-            <Flex h="53vh" maxW="full" w="95vh" bg="#BD3944" align="top" justifyContent="center" shadow="dark-lg" >
+            <Flex h="53vh" maxW="full" w="95vh" bg="#BD3944" align="top" justifyContent="center" shadow="dark-lg" borderRadius="2xl">
                 <Image h="50vh" w="90vh" shadow="dark-lg" src={AgentBanner}></Image>
             </Flex>
             <Box marginLeft="5" marginRight="5" align="center" maxW="100vh" >

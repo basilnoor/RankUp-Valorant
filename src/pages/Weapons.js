@@ -1,11 +1,11 @@
 import React from 'react';
 import axios from "axios";
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+
 import WeaponBanner from '../images/weapons.jpg'
 import Weapon from '../components/Weapon'
 
-import { Heading, Button, Flex, Image, Box } from '@chakra-ui/react'
+import { Heading, Flex, Image, Box } from '@chakra-ui/react'
 import { Table, Thead, Tbody, Tfoot, Tr, Th, Td, TableCaption, TableContainer, } from '@chakra-ui/react'
 
 
@@ -37,7 +37,7 @@ export const Weapons = () => {
 
     return (
         <>
-            <Flex h="53vh" maxW="full" w="95vh" bg="#BD3944" align="top" justifyContent="center" shadow="dark-lg" >
+            <Flex h="53vh" maxW="full" w="95vh" bg="#BD3944" align="top" justifyContent="center" shadow="dark-lg" borderRadius="2xl">
                 <Image h="50vh" w="90vh" shadow="dark-lg" src={WeaponBanner}></Image>
             </Flex>
             <Box marginLeft="5" marginRight="5" align="center" maxW="100vh" >
@@ -45,8 +45,8 @@ export const Weapons = () => {
                     Valorant Weapons Data
                 </Heading>
             </Box>
-            <TableContainer p={15}>
-                <Table variant='striped' colorScheme="red" shadow="dark-lg" bg="white">
+            <TableContainer p={15} >
+                <Table variant='striped' colorScheme="red" shadow="dark-lg" bg="white" borderRadius="2xl">
                     <TableCaption fontFamily="valorant">Valorant Weapons Data</TableCaption>
                     <Thead >
                         <Tr >
