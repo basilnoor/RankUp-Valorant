@@ -7,6 +7,13 @@ import { Flex, Accordion, SimpleGrid } from '@chakra-ui/react'
 
 function AgentList({ agents }) {
 
+    // Remove second Sova
+    for (let i = 0; i < agents.length; i++) {
+        if (agents[i].isPlayableCharacter == false) {
+            agents.splice(i, 1)
+        }
+    };
+
     return (
         <Flex >
             <Accordion allowMultiple allowToggle>
