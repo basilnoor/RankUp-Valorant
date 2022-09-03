@@ -32,8 +32,8 @@ function Agent({ agent }) {
                 </Box >
                 <AccordionIcon />
             </AccordionButton >
-            <Flex justify="center" w="full" bg='#BD3944' shadow="md">
-                <AccordionPanel bg='#BD3944' color="white">
+            <Flex justify="center" minW="full" bg='#BD3944' shadow="md">
+                <AccordionPanel bg='#BD3944' color="white" >
                     <Heading size="xsm">Abilities</Heading>
                     <Tabs variant='soft-rounded' colorScheme='red' >
                         <TabList >

@@ -87,7 +87,7 @@ function HomePage() {
     const radiantIcon = "https://media.valorant-api.com/competitivetiers/03621f52-342b-cf4e-4f86-9350a49c6d04/27/smallicon.png"
 
     const ref = useRef(null);
-    const { inViewport } = useInViewport(ref, { rootMargin: "-200px" }, { disconnectOnLeave: false }, {})
+    const { inViewport } = useInViewport(ref, { rootMargin: "-150px" }, { disconnectOnLeave: false }, {})
 
     return (
         <>

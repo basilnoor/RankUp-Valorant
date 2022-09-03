@@ -9,7 +9,7 @@ function AgentList({ agents }) {
 
     // Remove second Sova
     for (let i = 0; i < agents.length; i++) {
-        if (agents[i].isPlayableCharacter == false) {
+        if (agents[i].isPlayableCharacter === false) {
             agents.splice(i, 1)
         }
     };

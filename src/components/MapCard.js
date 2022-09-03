@@ -9,7 +9,7 @@ function Map({ map }) {
 
     // Used to animate ScaleFade when div enters view
     const ref = useRef(null);
-    const { enterCount } = useInViewport(ref, { rootMargin: "-200px" }, { disconnectOnLeave: false }, {})
+    const { enterCount } = useInViewport(ref, { rootMargin: "-150px" }, { disconnectOnLeave: false }, {})
 
     return (
         <ScaleFade initialScale={0.8} in={enterCount > 0} whileHover={{ scale: 1.1 }}>
