@@ -3,7 +3,7 @@
 
 ### Languages/Frameworks/Tools used:
 
-- Python, Hikari API, Hikari-lightbulb, Markdown, Visual studio code
+- Javascript, CSS, HTML, React, Chakra UI, FireBase, Valorant-API, Visual Studio Code 
 
 ### Project Goals:
 
