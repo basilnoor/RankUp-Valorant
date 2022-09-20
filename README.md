@@ -23,7 +23,7 @@
 
 > *I recommend everyone to check out the app itself since it is hosted live, but in case you want to see me cover the pages I will add videos quickly going over each page respectively.*
 
-**Apologies for the sound only coming from the left. Something is wrong with the audio channels and im not sure how to fix it.**
+**Apologies for the sound only coming from the left. Something is wrong with my mics audio channels.**
 
 #### Homepage:
 https://www.youtube.com/watch?v=dKaGQnKpwXg&list=PLLNrqHPJCSRMcpbrFGWoOJHdY2KXT6m2R
