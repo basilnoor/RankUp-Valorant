@@ -23,8 +23,10 @@
 
 > *I recommend everyone to check out the app itself since it is hosted live, but in case you want to see me cover the pages I will add videos quickly going over each page respectively.*
 
+**Apologies for the sound only coming from the left. Something is wrong with the audio channels and im not sure how to fix it.**
+
 #### Homepage:
-https://www.youtube.com/watch?v=dKaGQnKpwXg
+https://www.youtube.com/watch?v=dKaGQnKpwXg&list=PLLNrqHPJCSRMcpbrFGWoOJHdY2KXT6m2R
 
 #### Agents:
 https://www.youtube.com/watch?v=6cxlMDwFxuw&list=PLLNrqHPJCSRMcpbrFGWoOJHdY2KXT6m2R&index=2
