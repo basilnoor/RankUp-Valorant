@@ -21,4 +21,6 @@
 
 ### Documentation:
 
-> *Here i will showcase myself going over each page of the website. I will briefly go over why I choose to include the contents of each page respectively.*
+> *I recommend everyone to check out the app itself since it is hosted live, but in case you want to see me cover the pages I will add videos quickly going over each page respectively.*
+
+[![Everything Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")
