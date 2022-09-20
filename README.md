@@ -23,5 +23,17 @@
 
 > *I recommend everyone to check out the app itself since it is hosted live, but in case you want to see me cover the pages I will add videos quickly going over each page respectively.*
 
+#### Homepage:
 https://www.youtube.com/watch?v=dKaGQnKpwXg
 
+#### Agents:
+https://www.youtube.com/watch?v=6cxlMDwFxuw&list=PLLNrqHPJCSRMcpbrFGWoOJHdY2KXT6m2R&index=2
+
+#### Weapons:
+https://www.youtube.com/watch?v=8Fiv0mGmyVA&list=PLLNrqHPJCSRMcpbrFGWoOJHdY2KXT6m2R&index=3
+
+#### Maps:
+https://www.youtube.com/watch?v=mxOk-6JlM1A&list=PLLNrqHPJCSRMcpbrFGWoOJHdY2KXT6m2R&index=4
+
+#### Resources:
+https://www.youtube.com/watch?v=MHM0dIxB6B4&list=PLLNrqHPJCSRMcpbrFGWoOJHdY2KXT6m2R&index=5
