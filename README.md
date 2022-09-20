@@ -7,22 +7,18 @@
 
 ### Project Goals:
 
-- Create a TeamRandomizer discord bot capable of randomly generating two teams based on a weighted skill system.
-- Discord bot coded in Python and utilizes Hikari API to setup the bot and the lightbulb framework to utilize commands.
-- Utilizes SQLite3 as an SQL database to store players and maps.
-- Provide an appealing interface with various functionalities for the user to add, remove, edit players and more.
+- Create a website that can be utilized by the users of /r/VALORANT and other players new to the game to aid in the learning curve.
+- Work with React to create a fully responsive web design.
+- Utilize Chakra UI to aid in styling and getting experience with UI frameworks
+- Engaging with valorant-api in order to make GET requests and utilize said requests in order to display necessary information on the app
+- Make use of google Firebase in order to host the app
 
 ### Future Goals:
 
-- Host discord bot online so users can simply invite the TR bot into their discord server and use it freely.
-  - *Currently trying to find a free hosting service with persistance. Since TR bot utilizes SQLite3 for its database
-  the hosting service has to consistantly update the database so that adding, removing, and editing players is instant
-  for the user.*
-- Add an easier way for users to rebalance teams 
-  - *Currently users must redo the "/tr start" command.*
-<br />
-<br />
+- No set goals
+- The styling can be cleaned up in mobile, but the goal of the project was to progress my skills with react and front-end design.
+- The app should keep up to date with the game as long as the API is maintained, but if the API gets more information I will add more pages to the website to improve its functionality for the users.
 
 ### Documentation:
 
-> *Here i will go over how to use the bot and its functionality.*
+> *Here i will showcase myself going over each page of the website. I will briefly go over why I choose to include the contents of each page respectively.*
