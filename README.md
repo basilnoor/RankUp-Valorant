@@ -23,4 +23,5 @@
 
 > *I recommend everyone to check out the app itself since it is hosted live, but in case you want to see me cover the pages I will add videos quickly going over each page respectively.*
 
-[![Everything Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")
+[![Everything Is AWESOME](https://img.youtube.com/watch?v=dKaGQnKpwXg/0.jpg)](https://www.youtube.com/watch?v=dKaGQnKpwXg "Everything Is AWESOME")
+
