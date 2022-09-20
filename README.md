@@ -1,5 +1,5 @@
 # RankUp-Valorant
-## Hosted Live: https://rankup-valorant.firebaseapp.com/
+### Hosted Live: https://rankup-valorant.firebaseapp.com/
 
 ### Languages/Frameworks/Tools used:
 
