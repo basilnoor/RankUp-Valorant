@@ -7,10 +7,10 @@
 
 ### Project Goals:
 
-- Create a website that can be utilized by the users of /r/VALORANT and other players new to the game to aid in the learning curve.
+- Create a website that can be utilized by the users of **/r/VALORANT** and other players new to the game to aid in the learning curve.
 - Work with React to create a fully responsive web design.
 - Utilize Chakra UI to aid in styling and getting experience with UI frameworks
-- Engaging with valorant-api in order to make GET requests and utilize said requests in order to display necessary information on the app
+- Engaging with valorant-api in order to make GET/PULL requests and utilize said requests in order to display necessary information on the app
 - Make use of google Firebase in order to host the app
 
 ### Future Goals:
