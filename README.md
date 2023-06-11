@@ -1,6 +1,9 @@
 # RankUp-Valorant
 ### Hosted Live: https://rankup-valorant.firebaseapp.com/
 
+> Please note that the Valorant API is making some changes and therefore the rankup-valorant does not display any information currently.
+> I'm quite busy right now, but will update the project when I get time.
+
 ### Languages/Frameworks/Tools used:
 
 - Javascript, CSS, HTML, React, Chakra UI, FireBase, Valorant-API, Visual Studio Code 
